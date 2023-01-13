@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58355cc3eb459ad4cba1fb7f17324f50, type: 3}
+  m_Name: Default_Leg
+  m_EditorClassIdentifier: 
+  Name: 
+  Icon: {fileID: 0}
+  Description: 
+  MeshRenderer: {fileID: 1795578517211630060, guid: bef6ea0014f057e4587e1b0d22f9bf23,
+    type: 3}
+  Slot: 3
+  IsDefault: 1

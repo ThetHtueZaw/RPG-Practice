@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58355cc3eb459ad4cba1fb7f17324f50, type: 3}
+  m_Name: Default_Fist
+  m_EditorClassIdentifier: 
+  Name: Default Fist
+  Icon: {fileID: 0}
+  Description: 
+  MeshRenderer: {fileID: 0}
+  AltMeshRenderer: {fileID: 8465396785296553073, guid: e2bf2987e23b3794b817eb3d729bc751,
+    type: 3}
+  Slot: 6
+  IsDefault: 1
+  ArmorModifier: 0
+  DamageModifier: 10

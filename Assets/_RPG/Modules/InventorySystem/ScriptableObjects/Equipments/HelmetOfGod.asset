@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58355cc3eb459ad4cba1fb7f17324f50, type: 3}
+  m_Name: HelmetOfGod
+  m_EditorClassIdentifier: 
+  Name: Helmet Of God
+  Icon: {fileID: 21300000, guid: ae09bf8d29f49364180c4f312397f204, type: 3}
+  Description: 
+  MeshRenderer: {fileID: 843779018396790208, guid: 793ca65a5d620ca4d9666a2b65a15fb8,
+    type: 3}
+  Slot: 0
+  IsDefault: 0
+  ArmorModifier: 2
+  DamageModifier: 5
