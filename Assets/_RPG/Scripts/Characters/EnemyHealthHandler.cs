@@ -10,6 +10,9 @@ public class EnemyHealthHandler : MonoBehaviour
     private EnemyStats _EnemyStats;
     private EnemyHealthUI _HealthUI;
 
+    public float UIActiveTime;
+    private float _ActiveCountDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +21,24 @@ public class EnemyHealthHandler : MonoBehaviour
         _EnemyStats = GetComponent<EnemyStats>();
         _EnemyStats.OnHealthChanged += OnHealthChanged;
 
-        OnHealthChanged(_EnemyStats.CurrentHealth, _EnemyStats.MaxHealth);
+        _HealthUI.SetData(_EnemyStats.CurrentHealth, _EnemyStats.MaxHealth);
     }
 
     private void Update()
     {
+        _ActiveCountDown -= Time.deltaTime;
+
         if(_HealthUI == null)
         {
             return;
         }
 
         _HealthUI.transform.position = RootUI.position;
+
+        if(_ActiveCountDown <= 0)
+        {
+            _HealthUI.gameObject.SetActive(false);
+        }
     }
 
     private void OnDestroy()
@@ -40,5 +50,8 @@ public class EnemyHealthHandler : MonoBehaviour
     void OnHealthChanged(int currentHealth, int maxHealth)
     {
         _HealthUI.SetData(_EnemyStats.CurrentHealth, _EnemyStats.MaxHealth);
+
+        _ActiveCountDown = UIActiveTime;
+        _HealthUI.gameObject.SetActive(true);
     }
 }

@@ -5988,16 +5988,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1890277110427956254, guid: f9b4b9895cb9e3649b647a1d4e473646,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8063448487530248401, guid: f9b4b9895cb9e3649b647a1d4e473646,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 270
-      objectReference: {fileID: 0}
     - target: {fileID: 8063448487530248403, guid: f9b4b9895cb9e3649b647a1d4e473646,
         type: 3}
       propertyPath: m_RootOrder
@@ -6057,16 +6047,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NormalEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8538718368941764463, guid: f9b4b9895cb9e3649b647a1d4e473646,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8538718368941764463, guid: f9b4b9895cb9e3649b647a1d4e473646,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b4b9895cb9e3649b647a1d4e473646, type: 3}
