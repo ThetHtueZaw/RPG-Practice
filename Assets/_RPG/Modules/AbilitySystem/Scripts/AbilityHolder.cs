@@ -13,6 +13,8 @@ public class AbilityHolder : MonoBehaviour
     private float _ActiveTimeCountDown;
     private float _CooldownCountDown;
 
+    public AbilityButtonUI AbilityButtonUI;
+
     private enum AbilityState
     {
         READY,
@@ -47,6 +49,7 @@ public class AbilityHolder : MonoBehaviour
             if (_CooldownCountDown > 0)
             {
                 _CooldownCountDown -= Time.deltaTime;
+                AbilityButtonUI.UpdateCooldownImage(_CooldownCountDown, _Cooldown);
             }
             else
             {
@@ -60,6 +63,7 @@ public class AbilityHolder : MonoBehaviour
         if(oldAbility != null && oldSlot == (int)AbilitySlot)
         {
             Ability = null;
+            AbilityButtonUI.ClearData();
         }
 
         if (newAbility != null && newSlot == (int)AbilitySlot)
@@ -67,6 +71,7 @@ public class AbilityHolder : MonoBehaviour
             Ability = newAbility;
             _ActivateTime = Ability.ActiveTime;
             _Cooldown = Ability.Cooldown;
+            AbilityButtonUI.SetData(Ability);
         }
     }
 

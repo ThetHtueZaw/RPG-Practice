@@ -72,8 +72,7 @@ public class AbilityManager : MonoBehaviour
                 return;
             }
 
-            InventoryManager.Instance.AddItem(_CurrentAbilities[index]);
-            _CurrentAbilities[index] = null;
+            Unequip(index);
         }
     }
 }
